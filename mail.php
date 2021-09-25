@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $content = $name . ' оставил заявку на бронирование столика для ' . $persons . ' человек в ' . $time . '. Его телефон: ' . $phone;
 
     // Первый параметр - кому отправляем письмо, второй - тема письма, третий - содержание
-    $success = mail("artes30@mail.ru", 'Запрос на бронирование столика', $content);
+    $success = mail("admin@burgerclub.com", 'Запрос на бронирование столика', $content);
 
     if ($success) {
         // Отдаем 200 код ответа на http запрос

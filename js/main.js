@@ -115,7 +115,7 @@ $(document).ready(() => {
         if (name.val() && persons.val() && phone.val() && time.val()) {
             $.ajax({
                 type: 'post',
-                url: 'mail/mail.php',
+                url: 'mail.php',
                 data: 'name=' + name.val() + '&persons=' + persons.val() + '&phone=' + phone.val() + '&time=' + time.val(),
                 success: () => {
                     $('#order').hide()
